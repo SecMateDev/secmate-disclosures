@@ -1,8 +1,8 @@
 # Vulnerabilities Discovered with SecMate
 
-![Public disclosures](https://img.shields.io/badge/public_disclosures-71-1f6feb)
-![CVEs](https://img.shields.io/badge/CVEs-48-b42318)
-![Vendors](https://img.shields.io/badge/vendors-18-59636e)
+![Public disclosures](https://img.shields.io/badge/public_disclosures-72-1f6feb)
+![CVEs](https://img.shields.io/badge/CVEs-49-b42318)
+![Vendors](https://img.shields.io/badge/vendors-19-59636e)
 
 This repository is the public, searchable index of vulnerabilities discovered by the SecMate research team using [SecMate](https://secmate.dev), our code security analysis platform.
 
@@ -38,6 +38,7 @@ The research documented here in 2025 and 2026 primarily used the open-weight [`g
 
 | Record | Affected project | Finding | Severity | Published | Sources |
 |---|---|---|---:|---:|---|
+| [CVE-2026-43603 / SECMATE-2026-0037](disclosures/SECMATE-2026-0037.md) | AMD — AMD GPU Linux kernel driver | Linux GPU Driver NULL Pointer Dereference | Medium · 6.9 | 2026-09-08 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0037) · [Vendor advisory](https://www.amd.com/en/resources/product-security/bulletin/amd-sb-6034.html) · [Media coverage — SecurityWeek](https://www.securityweek.com/chipmaker-patch-tuesday-nvidia-amd-arm-issue-security-advisories/) |
 | [CVE-2026-42808 / SECMATE-2026-0036](disclosures/SECMATE-2026-0036.md) | Bosch Sensortec — COINES SDK | COINES Streaming Destination Buffer Overflow | Medium · 6.8 | 2026-08-31 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0036) · [Vendor advisory](https://psirt.bosch.com/security-advisories/bosch-sa-223618.html) · [Research article](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/) |
 | [CVE-2026-42807 / SECMATE-2026-0035](disclosures/SECMATE-2026-0035.md) | Bosch Sensortec — COINES SDK | COINES PC Bridge Heap Buffer Overflow | High · 8.0 | 2026-08-31 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0035) · [Vendor advisory](https://psirt.bosch.com/security-advisories/bosch-sa-223618.html) · [Research article](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/) |
 | [CVE-2026-42806 / SECMATE-2026-0034](disclosures/SECMATE-2026-0034.md) | Bosch Sensortec — BME690 SensorAPI | BME690 Gas Index Out-of-Bounds Read | Medium · 4.3 | 2026-08-31 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0034) · [Vendor advisory](https://psirt.bosch.com/security-advisories/bosch-sa-223618.html) · [Research article](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/) |
