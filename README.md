@@ -1,8 +1,8 @@
 # Vulnerabilities Discovered with SecMate
 
-![Public disclosures](https://img.shields.io/badge/public_disclosures-72-1f6feb)
-![CVEs](https://img.shields.io/badge/CVEs-49-b42318)
-![Vendors](https://img.shields.io/badge/vendors-19-59636e)
+![Public disclosures](https://img.shields.io/badge/public_disclosures-74-1f6feb)
+![CVEs](https://img.shields.io/badge/CVEs-51-b42318)
+![Vendors](https://img.shields.io/badge/vendors-20-59636e)
 
 This repository is the public, searchable index of vulnerabilities discovered by the SecMate research team using [SecMate](https://secmate.dev), our code security analysis platform.
 
@@ -18,6 +18,9 @@ The research documented here in 2025 and 2026 primarily used the open-weight [`g
 
 ### Technical research
 
+- [Mistral Vibe Shell Permission Bypass Leading to Arbitrary Code Execution](https://blog.secmate.dev/posts/mistral-vibe-cve-2026-87987-cve-2026-87984/)
+- [Which Vulnerabilities Do AI Coding Agents Still Produce?](https://blog.secmate.dev/posts/ai-generated-cpp-benchmark-gap/)
+- [CVE-2026-43603: Local Denial of Service in AMD's Linux GPU Driver](https://blog.secmate.dev/posts/amd-linux-gpu-driver-cve-2026-43603/)
 - [Five Bosch Sensortec SensorAPI and COINES SDK Vulnerabilities](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/)
 - [From USB to ESP: CPG-Guided Local Analysis](https://blog.secmate.dev/posts/espressif-usb-cpg-findings/)
 - [Corrupting the Secure World: Three Memory-Safety Flaws in OP-TEE](https://blog.secmate.dev/posts/optee-vulnerabilities-disclosure/)
@@ -38,7 +41,9 @@ The research documented here in 2025 and 2026 primarily used the open-weight [`g
 
 | Record | Affected project | Finding | Severity | Published | Sources |
 |---|---|---|---:|---:|---|
-| [CVE-2026-43603 / SECMATE-2026-0037](disclosures/SECMATE-2026-0037.md) | AMD — AMD GPU Linux kernel driver | Linux GPU Driver NULL Pointer Dereference | Medium · 6.9 | 2026-09-08 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0037) · [Vendor advisory](https://www.amd.com/en/resources/product-security/bulletin/amd-sb-6034.html) · [Media coverage — SecurityWeek](https://www.securityweek.com/chipmaker-patch-tuesday-nvidia-amd-arm-issue-security-advisories/) |
+| [CVE-2026-87984 / SECMATE-2026-0039](disclosures/SECMATE-2026-0039.md) | Mistral AI — Mistral Vibe | Workspace Permission Bypass via Shell Redirection | Critical · 9.3 | 2026-09-18 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0039) · [Vendor advisory](https://docs.mistral.ai/resources/security-advisories/MAI-2026-003) · [Research article](https://blog.secmate.dev/posts/mistral-vibe-cve-2026-87987-cve-2026-87984/) |
+| [CVE-2026-87987 / SECMATE-2026-0038](disclosures/SECMATE-2026-0038.md) | Mistral AI — Mistral Vibe | Shell Permission Bypass via Environment Assignments | Critical · 10.0 | 2026-09-18 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0038) · [Vendor advisory](https://docs.mistral.ai/resources/security-advisories/MAI-2026-003) · [Research article](https://blog.secmate.dev/posts/mistral-vibe-cve-2026-87987-cve-2026-87984/) |
+| [CVE-2026-43603 / SECMATE-2026-0037](disclosures/SECMATE-2026-0037.md) | AMD — AMD GPU Linux kernel driver | Linux GPU Driver NULL Pointer Dereference | Medium · 6.9 | 2026-09-08 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0037) · [Vendor advisory](https://www.amd.com/en/resources/product-security/bulletin/amd-sb-6034.html) · [Media coverage — SecurityWeek](https://www.securityweek.com/chipmaker-patch-tuesday-nvidia-amd-arm-issue-security-advisories/) · [Research article](https://blog.secmate.dev/posts/amd-linux-gpu-driver-cve-2026-43603/) |
 | [CVE-2026-42808 / SECMATE-2026-0036](disclosures/SECMATE-2026-0036.md) | Bosch Sensortec — COINES SDK | COINES Streaming Destination Buffer Overflow | Medium · 6.8 | 2026-08-31 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0036) · [Vendor advisory](https://psirt.bosch.com/security-advisories/bosch-sa-223618.html) · [Research article](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/) |
 | [CVE-2026-42807 / SECMATE-2026-0035](disclosures/SECMATE-2026-0035.md) | Bosch Sensortec — COINES SDK | COINES PC Bridge Heap Buffer Overflow | High · 8.0 | 2026-08-31 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0035) · [Vendor advisory](https://psirt.bosch.com/security-advisories/bosch-sa-223618.html) · [Research article](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/) |
 | [CVE-2026-42806 / SECMATE-2026-0034](disclosures/SECMATE-2026-0034.md) | Bosch Sensortec — BME690 SensorAPI | BME690 Gas Index Out-of-Bounds Read | Medium · 4.3 | 2026-08-31 | [SecMate disclosure](https://secmate.dev/disclosures/SECMATE-2026-0034) · [Vendor advisory](https://psirt.bosch.com/security-advisories/bosch-sa-223618.html) · [Research article](https://blog.secmate.dev/posts/bosch-sensortec-sensorapi-coines-vulnerabilities/) |
